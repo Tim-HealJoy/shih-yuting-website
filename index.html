@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>施昱廷｜用職能治療師的眼睛，看懂生活</title>
+  <meta name="description" content="施昱廷 — 職能治療師、高齡友善住宅顧問、培訓講師。把復能，帶進每一個家、每一場培訓。台灣第一位取得美國 LSVT-BIG 巴金森國際認證之 OT。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@500;700&family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============ CSS Variables (CIS v1.3) ============ */
+    :root {
+      --jet-black: #13262F;
+      --olive-bark: #73683B;
+      --deep-walnut: #583E23;
+      --khaki-beige: #B0A084;
+      --lavender: #E9E6FF;
+      --paper: #F8F6FF;
+      --serif-en: 'DM Serif Display', serif;
+      --serif-tc: 'Noto Serif TC', serif;
+      --sans-en: 'DM Sans', sans-serif;
+      --sans-tc: 'Noto Sans TC', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    /* ============ Reset ============ */
+    *, *::before, *::after { box-sizing: border-box; }
+    body, h1, h2, h3, h4, p, ul, ol, figure { margin: 0; padding: 0; }
+    body {
+      font-family: var(--sans-tc), var(--sans-en);
+      font-weight: 400;
+      color: var(--jet-black);
+      background: var(--lavender);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ============ Layout ============ */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 100px 0; }
+
+    /* ============ Typography Utility ============ */
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--sans-en);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: var(--olive-bark);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* ============ Nav ============ */
+    nav.topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(233, 230, 255, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transition: box-shadow 0.3s ease, background 0.3s ease;
+      border-bottom: 1px solid transparent;
+    }
+    nav.topbar.scrolled {
+      box-shadow: 0 2px 16px rgba(19, 38, 47, 0.06);
+      border-bottom-color: rgba(115, 104, 59, 0.15);
+    }
+    nav.topbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    .brand { display: flex; flex-direction: column; gap: 2px; }
+    .brand-name {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: 0.04em;
+    }
+    .brand-sub {
+      font-family: var(--sans-en);
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--olive-bark);
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+    .nav-links a {
+      font-size: 14px;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--olive-bark); }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 1px;
+      background: var(--olive-bark);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      padding: 10px 22px;
+      background: var(--jet-black);
+      color: var(--lavender);
+      font-size: 14px;
+      border-radius: 100px;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover {
+      background: var(--olive-bark);
+      transform: translateY(-1px);
+    }
+    @media (max-width: 880px) { .nav-links { display: none; } }
+
+    /* ============ Hero ============ */
+    .hero {
+      padding: 80px 0 110px;
+      background: linear-gradient(180deg, var(--lavender) 0%, var(--paper) 100%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
+      align-items: center;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-family: var(--sans-en);
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--olive-bark);
+      padding: 8px 18px;
+      border: 1px solid var(--olive-bark);
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+      margin-bottom: 28px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--olive-bark);
+      position: relative;
+    }
+    .hero .subtitle {
+      font-family: var(--sans-tc);
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.6;
+      color: rgba(19, 38, 47, 0.72);
+      margin-bottom: 44px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 36px;
+      background: var(--jet-black);
+      color: var(--lavender);
+      font-size: 16px;
+      border-radius: 100px;
+      transition: all 0.25s ease;
+    }
+    .btn-primary:hover {
+      background: var(--olive-bark);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(115, 104, 59, 0.3);
+    }
+    .btn-primary::after {
+      content: "→";
+      transition: transform 0.2s;
+    }
+    .btn-primary:hover::after { transform: translateX(4px); }
+    .hero-photo {
+      position: relative;
+    }
+    .hero-photo img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 6px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-photo::before {
+      content: "";
+      position: absolute;
+      inset: 24px -24px -24px 24px;
+      border: 1px solid var(--olive-bark);
+      border-radius: 6px;
+      z-index: 1;
+    }
+    @media (max-width: 880px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { font-size: 36px; }
+      .hero .subtitle { font-size: 17px; }
+    }
+
+    /* ============ About ============ */
+    #about { background: var(--paper); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .about-text h2 {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .about-role {
+      font-family: var(--sans-en);
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: var(--olive-bark);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--khaki-beige);
+    }
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: rgba(19, 38, 47, 0.85);
+      margin-bottom: 18px;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+    @media (max-width: 880px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-text h2 { font-size: 32px; }
+    }
+
+    /* ============ Services ============ */
+    #services { background: var(--lavender); }
+    .section-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+    .section-header h2 {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      font-size: 16px;
+      color: rgba(19, 38, 47, 0.7);
+      line-height: 1.7;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: var(--paper);
+      padding: 44px 40px;
+      border-radius: 8px;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 48px rgba(19, 38, 47, 0.08);
+      border-color: var(--khaki-beige);
+    }
+    .service-no {
+      font-family: var(--mono);
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--olive-bark);
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .service-tag {
+      font-family: var(--sans-en);
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--khaki-beige);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .service-title {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 26px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .service-desc {
+      font-size: 15px;
+      line-height: 1.85;
+      color: rgba(19, 38, 47, 0.78);
+    }
+    @media (max-width: 880px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============ Stats ============ */
+    #stats {
+      background: var(--jet-black);
+      color: var(--lavender);
+      padding: 110px 0;
+    }
+    #stats .section-header h2 { color: var(--lavender); }
+    #stats .section-header p { color: rgba(233, 230, 255, 0.65); }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      margin-top: 16px;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 0 16px;
+    }
+    .stat-number {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 1;
+      color: var(--olive-bark);
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+    .stat-label {
+      font-family: var(--serif-tc);
+      font-weight: 600;
+      font-size: 19px;
+      color: var(--lavender);
+      margin-bottom: 8px;
+    }
+    .stat-sub {
+      font-size: 13px;
+      color: rgba(233, 230, 255, 0.55);
+      line-height: 1.5;
+    }
+    @media (max-width: 880px) {
+      .stats-grid { grid-template-columns: 1fr; gap: 40px; }
+      .stat-number { font-size: 60px; }
+    }
+
+    /* ============ Media ============ */
+    #media { background: var(--paper); }
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .media-card {
+      background: var(--lavender);
+      padding: 32px 28px 30px;
+      border-radius: 8px;
+      border: 1px solid rgba(115, 104, 59, 0.18);
+      transition: all 0.22s;
+      display: block;
+    }
+    .media-card:hover {
+      border-color: var(--olive-bark);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px rgba(19, 38, 47, 0.06);
+    }
+    .media-name {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 18px;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .media-role {
+      font-size: 13px;
+      color: rgba(19, 38, 47, 0.65);
+      line-height: 1.55;
+    }
+    .media-arrow {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--olive-bark);
+      font-size: 14px;
+    }
+    @media (max-width: 880px) {
+      .media-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============ Articles ============ */
+    #articles {
+      background: var(--paper);
+      border-top: 1px solid rgba(115, 104, 59, 0.12);
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .article-card {
+      background: var(--lavender);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.28s;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(115, 104, 59, 0.08);
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(19, 38, 47, 0.1);
+      border-color: var(--olive-bark);
+    }
+    .article-cover {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+    }
+    .article-body {
+      padding: 24px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--sans-en);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: var(--olive-bark);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .article-meta-dot {
+      width: 3px;
+      height: 3px;
+      background: var(--khaki-beige);
+      border-radius: 100px;
+      display: inline-block;
+    }
+    .article-title {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 19px;
+      line-height: 1.45;
+      color: var(--jet-black);
+      margin-bottom: 12px;
+    }
+    .article-excerpt {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(19, 38, 47, 0.7);
+      margin-bottom: 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .article-readmore {
+      margin-top: auto;
+      font-size: 14px;
+      color: var(--olive-bark);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+    .article-card:hover .article-readmore { gap: 12px; }
+    .article-readmore::after {
+      content: "→";
+      transition: transform 0.2s;
+    }
+    .articles-footer {
+      text-align: center;
+      margin-top: 48px;
+      color: rgba(19, 38, 47, 0.55);
+      font-size: 13px;
+    }
+    .articles-footer em {
+      font-style: normal;
+      color: var(--olive-bark);
+      font-weight: 500;
+    }
+    @media (max-width: 1100px) {
+      .articles-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .articles-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============ Events Carousel ============ */
+    #events { background: var(--lavender); overflow: hidden; }
+    .carousel { position: relative; }
+    .carousel-track {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding: 12px 4px 32px;
+      scroll-behavior: smooth;
+    }
+    .carousel-track::-webkit-scrollbar { display: none; }
+    .event-slide {
+      flex: 0 0 calc((100% - 48px) / 3);
+      scroll-snap-align: start;
+      background: var(--paper);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(19, 38, 47, 0.06);
+      transition: transform 0.3s;
+    }
+    .event-slide:hover { transform: translateY(-3px); }
+    .event-slide img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .event-caption {
+      padding: 18px 22px 22px;
+      font-size: 14px;
+      color: rgba(19, 38, 47, 0.78);
+      line-height: 1.6;
+    }
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .carousel-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      background: var(--paper);
+      color: var(--jet-black);
+      border: 1px solid var(--khaki-beige);
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .carousel-btn:hover {
+      background: var(--jet-black);
+      color: var(--lavender);
+      border-color: var(--jet-black);
+      transform: translateY(-1px);
+    }
+    @media (max-width: 1100px) {
+      .event-slide { flex-basis: calc((100% - 24px) / 2); }
+    }
+    @media (max-width: 700px) {
+      .event-slide { flex-basis: calc(100% - 8px); }
+    }
+
+    /* ============ Contact ============ */
+    #contact {
+      background: var(--jet-black);
+      color: var(--lavender);
+      text-align: center;
+      padding: 120px 0;
+    }
+    .contact-headline {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.35;
+      max-width: 720px;
+      margin: 0 auto 16px;
+      color: var(--lavender);
+    }
+    .contact-sub {
+      font-size: 16px;
+      color: rgba(233, 230, 255, 0.65);
+      margin-bottom: 48px;
+    }
+    .contact-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 44px;
+      background: var(--olive-bark);
+      color: var(--lavender);
+      font-size: 17px;
+      border-radius: 100px;
+      transition: all 0.25s;
+      margin-bottom: 56px;
+    }
+    .contact-cta:hover {
+      background: var(--khaki-beige);
+      color: var(--jet-black);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(176, 160, 132, 0.35);
+    }
+    .contact-cta::after {
+      content: "→";
+      transition: transform 0.2s;
+    }
+    .contact-cta:hover::after { transform: translateX(4px); }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(233, 230, 255, 0.75);
+      font-size: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    .contact-link:hover {
+      color: var(--lavender);
+      border-bottom-color: var(--olive-bark);
+    }
+    .contact-link svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+    @media (max-width: 880px) {
+      .contact-headline { font-size: 32px; }
+    }
+
+    /* ============ Footer ============ */
+    footer {
+      background: var(--jet-black);
+      color: rgba(233, 230, 255, 0.45);
+      padding: 28px 0;
+      text-align: center;
+      font-size: 12px;
+      border-top: 1px solid rgba(115, 104, 59, 0.18);
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .footer-right {
+      font-family: var(--sans-en);
+      letter-spacing: 0.1em;
+    }
+    @media (max-width: 700px) {
+      .footer-grid { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================== NAV =================== -->
+  <nav class="topbar" id="topnav">
+    <div class="container">
+      <a href="#" class="brand">
+        <span class="brand-name">施昱廷</span>
+        <span class="brand-sub">SHIH · YU-TING · OT</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#stats">累積</a></li>
+        <li><a href="#media">合作媒體</a></li>
+        <li><a href="#articles">專欄文章</a></li>
+        <li><a href="#events">活動現場</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">邀約合作</a>
+    </div>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-tag">Personal Brand · Occupational Therapist</span>
+          <h1>用<em>職能治療師</em>的眼睛，<br>看懂生活</h1>
+          <p class="subtitle">把復能，帶進每一個家、每一場培訓</p>
+          <a href="#contact" class="btn-primary">邀約合作</a>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/hero.jpg" alt="施昱廷 — 職能治療師" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/about.jpg" alt="施昱廷 — 職能治療師白袍形象">
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">About</span>
+          <h2>嗨，我是施昱廷</h2>
+          <p class="about-role">職能治療師 × 高齡友善住宅顧問 × 培訓講師</p>
+          <p>從臨床走到家裡、從家裡走到課堂 — 我是一位職能治療師，但我相信「職能」不只發生在醫院或機構，更在每一個人的生活裡。</p>
+          <p>職能治療師的價值，不是讓人變得更依賴專業，而是看見人的可能性，把復能的智慧帶進日常生活、培訓現場、與住宅設計裡。讓人可以透過調整環境或是工作模式來發揮最大潛能。</p>
+          <p>至今累積 800 場以上企業、學界、醫療、社福、政府單位授課實戰，是台灣第一位取得美國 LSVT-BIG 國際巴金森氏症介入認證的職能治療師。亦為漢聲廣播電台高齡節目合作主持人、聯合報 Wacare 遠距健康駐站專家。現在則身兼健悅管理顧問技術總監、台北市職能治療師公會理事。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SERVICES =================== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Services</span>
+        <h2>服務項目</h2>
+        <p>從演講、培訓、復能宅顧問到跨域專案合作，以職能治療師的視角介入每一個讓人能繼續變好的環節。</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-no">01</div>
+          <div class="service-tag">Keynote</div>
+          <h3 class="service-title">演講邀約</h3>
+          <p class="service-desc">為企業、學校、機構提供高齡照護、復能、正念主題演講。曾與輝達、亞馬遜、星宇航空、台鐵、故宮博物院等單位合作。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-no">02</div>
+          <div class="service-tag">Training</div>
+          <h3 class="service-title">培訓課程</h3>
+          <p class="service-desc">客製化長照、職場、銀髮族培訓方案。從失智症溝通、高齡遊戲化教學、特殊族群神經復健，到企業正念減壓，依需求設計實戰課程。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-no">03</div>
+          <div class="service-tag">Consulting</div>
+          <h3 class="service-title">復能宅顧問</h3>
+          <p class="service-desc">銜接「醫院 → 家」之間的關鍵空缺。從術後康養住宅、高齡友善住宅、到康復中途旅館，以職能治療師的視角介入空間規劃與服務設計，協助建商、社宅、家庭，讓住宅本身成為復能的工具 — 不只是無障礙，而是主動讓人變強。</p>
+        </div>
+        <div class="service-card">
+          <div class="service-no">04</div>
+          <div class="service-tag">Collaboration</div>
+          <h3 class="service-title">高齡跨領域專案合作</h3>
+          <p class="service-desc">與政府部會、文化機構、品牌商、媒體建立跨域高齡專案。曾與國立故宮博物院共同開發「國寶動動操」、衛福部預防延緩照護師資、漢聲廣播高齡節目主持、聯合報 Wacare 駐站專家，協助組織把高齡議題轉譯為可落地、可傳播的內容方案。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== STATS =================== -->
+  <section id="stats">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" style="color: var(--khaki-beige);">By the Numbers</span>
+        <h2>累積</h2>
+        <p>不只是場次，更是 800 場現場與 200 個家庭裡的真實對話。</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">800+</div>
+          <div class="stat-label">場授課實戰</div>
+          <div class="stat-sub">企業 / 學界 / 醫療 / 社福 / 政府</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">個家庭</div>
+          <div class="stat-sub">長照現場服務經驗</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1</div>
+          <div class="stat-label">台灣第一位</div>
+          <div class="stat-sub">取得美國 LSVT-BIG 巴金森國際認證 OT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== MEDIA =================== -->
+  <section id="media">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Media · Collaborations</span>
+        <h2>合作媒體</h2>
+        <p>從廣播主持、雜誌專欄、文化機構共創到品牌商業合作 — 把專業翻譯成可被聽見的對話。</p>
+      </div>
+      <div class="media-grid">
+        <a href="https://audio.voh.com.tw/tw/Playback/ugC_Playback.aspx?PID=162&D=20250406" target="_blank" rel="noopener" class="media-card">
+          <div class="media-name">漢聲廣播電台</div>
+          <div class="media-role">高齡節目協同主持人</div>
+          <span class="media-arrow">→</span>
+        </a>
+        <a href="https://www.wacare.live/expert-card/4733013613950/06325390223849/zh-TW?ActivityType=forum" target="_blank" rel="noopener" class="media-card">
+          <div class="media-name">Wacare / 聯合報</div>
+          <div class="media-role">遠距健康駐站專家</div>
+          <span class="media-arrow">→</span>
+        </a>
+        <div class="media-card">
+          <div class="media-name">國立故宮博物院</div>
+          <div class="media-role">國寶動動操共同開發</div>
+        </div>
+        <div class="media-card">
+          <div class="media-name">包大人 / 凱思品牌</div>
+          <div class="media-role">30 週年品牌記者會</div>
+        </div>
+        <div class="media-card">
+          <div class="media-name">元氣網</div>
+          <div class="media-role">預防失智衛教專欄</div>
+        </div>
+        <a href="https://ankemedia.com/author/yutingshi" target="_blank" rel="noopener" class="media-card">
+          <div class="media-name">安可人生雜誌</div>
+          <div class="media-role">專欄文章</div>
+          <span class="media-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ARTICLES =================== -->
+  <section id="articles">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Articles · Writings</span>
+        <h2>專欄文章</h2>
+        <p>把臨床洞察寫成可被帶回家的方法 — 從平衡防跌、復能訓練到正念照顧。</p>
+      </div>
+      <div class="articles-grid">
+        <a href="https://ankemedia.com/2026/44414" target="_blank" rel="noopener" class="article-card">
+          <img src="assets/articles/01-balance-test.jpg" alt="破解跌倒危機！從單腳站立看懂大腦與身體的平衡密碼" class="article-cover">
+          <div class="article-body">
+            <div class="article-meta">
+              <span>安可人生</span>
+              <span class="article-meta-dot"></span>
+              <span>2026-03-17</span>
+            </div>
+            <h3 class="article-title">破解跌倒危機！從「單腳站立」看懂大腦與身體的平衡密碼</h3>
+            <p class="article-excerpt">許多長輩在一次小跌倒後產生「跌倒恐懼症」，反而陷入肌肉萎縮、跌倒風險倍增的惡性循環。介紹身體的「平衡密碼」與最簡單的單腳站立自我檢測法，及如何在日常輕鬆鍛鍊防跌力。</p>
+            <span class="article-readmore">閱讀全文</span>
+          </div>
+        </a>
+      </div>
+      <p class="articles-footer">更多文章持續更新中 — 想看完整文章列表，<em><a href="https://ankemedia.com/author/yutingshi" target="_blank" rel="noopener" style="text-decoration: underline;">前往安可人生作者頁</a></em></p>
+    </div>
+  </section>
+
+  <!-- =================== EVENTS CAROUSEL =================== -->
+  <section id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Events · On Site</span>
+        <h2>活動現場</h2>
+        <p>從企業會議室、大學講堂、社區據點到品牌記者會 — 800 場現場的一部分。</p>
+      </div>
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="event-slide">
+            <img src="assets/events/01-baodaren.jpg" alt="與包大人 30 週年合作">
+            <div class="event-caption">與包大人 30 週年合作｜提拉密舒健康操示範</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/02-npm.jpg" alt="國立故宮博物院">
+            <div class="event-caption">國立故宮博物院｜國寶動動操跨域開發</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/03-cgu.jpg" alt="長庚大學業界講師">
+            <div class="event-caption">長庚大學業界講師專題</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/04-corporate.jpg" alt="企業客座講師">
+            <div class="event-caption">企業客座講師｜職場健康衛教</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/05-zentangle.jpg" alt="國寶動動操禪繞畫">
+            <div class="event-caption">國寶動動操｜文化 × 復能設計</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/06-transfer-1.jpg" alt="長照人員培訓">
+            <div class="event-caption">長照人員培訓｜翻身移位實戰</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/07-transfer-2.jpg" alt="長照人員培訓分組演練">
+            <div class="event-caption">長照人員培訓｜分組演練</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/08-classroom.jpg" alt="課程現場">
+            <div class="event-caption">課程現場</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/09-classroom-2.jpg" alt="課程現場">
+            <div class="event-caption">課程現場</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/10-classroom-3.jpg" alt="課程現場">
+            <div class="event-caption">課程現場</div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="上一張">←</button>
+          <button class="carousel-btn" id="nextBtn" aria-label="下一張">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section id="contact">
+    <div class="container">
+      <span class="eyebrow" style="color: var(--khaki-beige);">Let's Talk</span>
+      <h2 class="contact-headline">一起把復能的智慧，<br>帶進更多人的生活</h2>
+      <p class="contact-sub">邀約合作、演講、培訓、復能宅顧問諮詢歡迎來信</p>
+      <a href="mailto:j2hsi9123@gmail.com" class="contact-cta">寄信給昱廷</a>
+      <div class="contact-links">
+        <a href="mailto:j2hsi9123@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5h18v14H3z"/><path d="M3 5l9 8 9-8"/></svg>
+          j2hsi9123@gmail.com
+        </a>
+        <a href="https://www.facebook.com/shihyuting.OT/" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+          Facebook 粉專
+        </a>
+        <a href="https://healjoy-housing.com/" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+          健悅管理顧問
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>Copyright © 2026 施昱廷. All Rights Reserved.</div>
+        <div class="footer-right">Personal Brand CIS v1.3</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll shadow
+    const nav = document.getElementById('topnav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 12) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+
+    // Carousel controls
+    const track = document.getElementById('carouselTrack');
+    const prev = document.getElementById('prevBtn');
+    const next = document.getElementById('nextBtn');
+    const getStep = () => {
+      const slide = track.querySelector('.event-slide');
+      if (!slide) return 320;
+      const style = getComputedStyle(track);
+      const gap = parseInt(style.gap, 10) || 24;
+      return slide.getBoundingClientRect().width + gap;
+    };
+    prev.addEventListener('click', () => track.scrollBy({ left: -getStep(), behavior: 'smooth' }));
+    next.addEventListener('click', () => track.scrollBy({ left: getStep(), behavior: 'smooth' }));
+
+    // Smooth scroll for anchor links (account for sticky nav)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#' || href.length < 2) return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        const offset = nav.offsetHeight + 8;
+        window.scrollTo({
+          top: target.getBoundingClientRect().top + window.scrollY - offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

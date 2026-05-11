@@ -1,0 +1,112 @@
+{
+  "kind": "personal-brand",
+  "product": {
+    "slug": "restorelife",
+    "name": "施昱廷個人品牌官網",
+    "industry": "occupational-therapy × aging-friendly-housing × keynote-speaker",
+    "tone": ["實證", "溫暖", "減法", "跨域"],
+    "design_source": "000_Agent/workflows/DESIGN.md (CIS v1.3)"
+  },
+  "nav": {
+    "brandText": "施昱廷",
+    "brandSubtext": "Shih, Yu-Ting · OT",
+    "links": [
+      { "label": "關於我", "href": "#about" },
+      { "label": "服務項目", "href": "#services" },
+      { "label": "累積", "href": "#stats" },
+      { "label": "合作媒體", "href": "#media" },
+      { "label": "活動現場", "href": "#events" },
+      { "label": "聯繫", "href": "#contact" }
+    ],
+    "ctaShort": "邀約合作"
+  },
+  "hero": {
+    "title": "用職能治療師的眼睛，看懂生活",
+    "subtitle": "把復能，帶進每一個家、每一場培訓",
+    "photo": "assets/hero.jpg",
+    "cta": { "text": "邀約合作", "href": "#contact" }
+  },
+  "about": {
+    "greeting": "嗨，我是施昱廷",
+    "role": "職能治療師 × 高齡友善住宅顧問 × 培訓講師",
+    "paragraphs": [
+      "從臨床走到家裡、從家裡走到課堂 — 我是一位職能治療師，但我相信「職能」不只發生在醫院或機構，更在每一個人的生活裡。",
+      "職能治療師的價值，不是讓人變得更依賴專業，而是看見人的可能性，把復能的智慧帶進日常生活、培訓現場、與住宅設計裡。讓人可以透過調整環境或是工作模式來發揮最大潛能。",
+      "至今累積 800 場以上企業、學界、醫療、社福、政府單位授課實戰，是台灣第一位取得美國 LSVT-BIG 國際巴金森氏症介入認證的職能治療師。亦為漢聲廣播電台高齡節目合作主持人、聯合報 Wacare 遠距健康駐站專家。現在則身兼健悅管理顧問技術總監、台北市職能治療師公會理事。"
+    ],
+    "photo": "assets/about.jpg"
+  },
+  "services": [
+    {
+      "no": "01",
+      "tag": "KEYNOTE",
+      "title": "演講邀約",
+      "description": "為企業、學校、機構提供高齡照護、復能、正念主題演講。曾與輝達、亞馬遜、星宇航空、台鐵、故宮博物院等單位合作。"
+    },
+    {
+      "no": "02",
+      "tag": "TRAINING",
+      "title": "培訓課程",
+      "description": "客製化長照、職場、銀髮族培訓方案。從失智症溝通、高齡遊戲化教學、特殊族群神經復健，到企業正念減壓，依需求設計實戰課程。"
+    },
+    {
+      "no": "03",
+      "tag": "CONSULTING",
+      "title": "復能宅顧問",
+      "description": "銜接「醫院 → 家」之間的關鍵空缺。從術後康養住宅、高齡友善住宅、到康復中途旅館，以職能治療師的視角介入空間規劃與服務設計，協助建商、社宅、家庭，讓住宅本身成為復能的工具 — 不只是無障礙，而是主動讓人變強。"
+    },
+    {
+      "no": "04",
+      "tag": "COLLABORATION",
+      "title": "高齡跨領域專案合作",
+      "description": "與政府部會、文化機構、品牌商、媒體建立跨域高齡專案。曾與國立故宮博物院共同開發「國寶動動操」、衛福部預防延緩照護師資、漢聲廣播高齡節目主持、聯合報 Wacare 駐站專家，協助組織把高齡議題轉譯為可落地、可傳播的內容方案。"
+    }
+  ],
+  "stats": [
+    { "number": "800+", "label": "場授課實戰", "sub": "企業 / 學界 / 醫療 / 社福 / 政府" },
+    { "number": "200+", "label": "個家庭", "sub": "長照現場服務經驗" },
+    { "number": "1", "label": "台灣第一位", "sub": "取得美國 LSVT-BIG 巴金森國際認證 OT" }
+  ],
+  "media": [
+    { "name": "漢聲廣播電台", "role": "高齡節目協同主持人", "href": "https://audio.voh.com.tw/tw/Playback/ugC_Playback.aspx?PID=162&D=20250406" },
+    { "name": "Wacare / 聯合報", "role": "遠距健康駐站專家", "href": "https://www.wacare.live/expert-card/4733013613950/06325390223849/zh-TW?ActivityType=forum" },
+    { "name": "國立故宮博物院", "role": "國寶動動操共同開發", "href": "" },
+    { "name": "包大人 / 凱思品牌", "role": "30 週年品牌記者會", "href": "" },
+    { "name": "元氣網", "role": "預防失智衛教專欄", "href": "" },
+    { "name": "安可人生雜誌", "role": "專欄文章", "href": "https://ankemedia.com/author/yutingshi" }
+  ],
+  "articles": [
+    {
+      "source": "安可人生",
+      "date": "2026-03-17",
+      "title": "破解跌倒危機！從「單腳站立」看懂大腦與身體的平衡密碼",
+      "excerpt": "許多長輩在一次小跌倒後產生「跌倒恐懼症」，反而陷入肌肉萎縮、跌倒風險倍增的惡性循環。介紹身體的「平衡密碼」與最簡單的單腳站立自我檢測法，及如何在日常輕鬆鍛鍊防跌力。",
+      "cover": "assets/articles/01-balance-test.jpg",
+      "href": "https://ankemedia.com/2026/44414"
+    }
+  ],
+  "articles_index": "https://ankemedia.com/author/yutingshi",
+  "events": [
+    { "src": "assets/events/01-baodaren.jpg", "caption": "與包大人 30 週年合作｜提拉密舒健康操示範" },
+    { "src": "assets/events/02-npm.jpg", "caption": "國立故宮博物院｜國寶動動操跨域開發" },
+    { "src": "assets/events/03-cgu.jpg", "caption": "長庚大學業界講師專題" },
+    { "src": "assets/events/04-corporate.jpg", "caption": "企業客座講師｜職場健康衛教" },
+    { "src": "assets/events/05-zentangle.jpg", "caption": "國寶動動操｜文化 × 復能設計" },
+    { "src": "assets/events/06-transfer-1.jpg", "caption": "長照人員培訓｜翻身移位實戰" },
+    { "src": "assets/events/07-transfer-2.jpg", "caption": "長照人員培訓｜分組演練" },
+    { "src": "assets/events/08-classroom.jpg", "caption": "課程現場" },
+    { "src": "assets/events/09-classroom-2.jpg", "caption": "課程現場" },
+    { "src": "assets/events/10-classroom-3.jpg", "caption": "課程現場" }
+  ],
+  "contact": {
+    "cta_headline": "一起把復能的智慧，帶進更多人的生活",
+    "cta_sub": "邀約合作、演講、培訓、復能宅顧問諮詢歡迎來信",
+    "email": "j2hsi9123@gmail.com",
+    "facebook": { "label": "Facebook 粉專", "href": "https://www.facebook.com/shihyuting.OT/" },
+    "company": { "label": "健悅管理顧問", "href": "https://healjoy-housing.com/" }
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 施昱廷. All Rights Reserved.",
+    "design_credit": "Personal Brand CIS v1.3"
+  }
+}
