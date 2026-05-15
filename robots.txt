@@ -1,0 +1,6 @@
+# 歡迎所有搜尋引擎爬取
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shih-yuting-website.j2hsi9123.workers.dev/sitemap.xml
