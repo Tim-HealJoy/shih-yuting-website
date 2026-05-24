@@ -106,14 +106,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@500;700&family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
-    /* ============ CSS Variables (CIS v1.3) ============ */
+    /* ============ CSS Variables (CIS v1.3 — Earth Tone Edition) ============ */
     :root {
+      /* Brand palette (per CIS v1.3) */
       --jet-black: #13262F;
       --olive-bark: #73683B;
       --deep-walnut: #583E23;
       --khaki-beige: #B0A084;
-      --lavender: #E9E6FF;
-      --paper: #F8F6FF;
+      --lavender: #E9E6FF;       /* 退居點綴，僅用於 hover / tag */
+
+      /* Neutral warm-paper system (refined for editorial feel) */
+      --paper: #FAF8F2;          /* 主底色：暖米白（替代原紫白） */
+      --cream: #F2EDE2;          /* 次層底色：更深米色 */
+      --card: #FDFBF5;           /* 卡片底色：近白但暖（不破壞 CIS 禁純白） */
+
+      /* Lines & dividers */
+      --line: rgba(115, 104, 59, 0.18);
+      --line-soft: rgba(115, 104, 59, 0.10);
+
+      /* Typography */
       --serif-en: 'DM Serif Display', serif;
       --serif-tc: 'Noto Serif TC', serif;
       --sans-en: 'DM Sans', sans-serif;
@@ -128,7 +139,7 @@
       font-family: var(--sans-tc), var(--sans-en);
       font-weight: 400;
       color: var(--jet-black);
-      background: var(--lavender);
+      background: var(--paper);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -158,7 +169,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(233, 230, 255, 0.92);
+      background: rgba(250, 248, 242, 0.88);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       transition: box-shadow 0.3s ease, background 0.3s ease;
@@ -227,7 +238,7 @@
     /* ============ Hero ============ */
     .hero {
       padding: 80px 0 110px;
-      background: linear-gradient(180deg, var(--lavender) 0%, var(--paper) 100%);
+      background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
     }
     .hero-grid {
       display: grid;
@@ -359,7 +370,11 @@
     }
 
     /* ============ Services ============ */
-    #services { background: var(--lavender); }
+    #services {
+      background: var(--cream);
+      border-top: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+    }
     .section-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
     .section-header h2 {
       font-family: var(--serif-tc);
@@ -379,16 +394,16 @@
       gap: 28px;
     }
     .service-card {
-      background: var(--paper);
+      background: var(--card);
       padding: 44px 40px;
-      border-radius: 8px;
+      border-radius: 4px;
       transition: all 0.3s;
-      border: 1px solid transparent;
+      border: 1px solid var(--line-soft);
     }
     .service-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 24px 48px rgba(19, 38, 47, 0.08);
-      border-color: var(--khaki-beige);
+      box-shadow: 0 20px 40px rgba(19, 38, 47, 0.08);
+      border-color: var(--olive-bark);
     }
     .service-no {
       font-family: var(--mono);
@@ -468,17 +483,20 @@
     }
 
     /* ============ Media ============ */
-    #media { background: var(--paper); }
+    #media {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line-soft);
+    }
     .media-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
     .media-card {
-      background: var(--lavender);
+      background: var(--card);
       padding: 32px 28px 30px;
-      border-radius: 8px;
-      border: 1px solid rgba(115, 104, 59, 0.18);
+      border-radius: 4px;
+      border: 1px solid var(--line-soft);
       transition: all 0.22s;
       display: block;
     }
@@ -511,8 +529,8 @@
 
     /* ============ Articles ============ */
     #articles {
-      background: var(--paper);
-      border-top: 1px solid rgba(115, 104, 59, 0.12);
+      background: var(--cream);
+      border-bottom: 1px solid var(--line-soft);
     }
     .articles-grid {
       display: grid;
@@ -520,13 +538,13 @@
       gap: 28px;
     }
     .article-card {
-      background: var(--lavender);
-      border-radius: 8px;
+      background: var(--card);
+      border-radius: 4px;
       overflow: hidden;
       transition: all 0.28s;
       display: flex;
       flex-direction: column;
-      border: 1px solid rgba(115, 104, 59, 0.08);
+      border: 1px solid var(--line-soft);
     }
     .article-card:hover {
       transform: translateY(-4px);
@@ -615,7 +633,10 @@
     }
 
     /* ============ Events Carousel ============ */
-    #events { background: var(--lavender); overflow: hidden; }
+    #events {
+      background: var(--paper);
+      overflow: hidden;
+    }
     .carousel { position: relative; }
     .carousel-track {
       display: flex;
@@ -630,11 +651,12 @@
     .event-slide {
       flex: 0 0 calc((100% - 48px) / 3);
       scroll-snap-align: start;
-      background: var(--paper);
-      border-radius: 8px;
+      background: var(--card);
+      border: 1px solid var(--line-soft);
+      border-radius: 4px;
       overflow: hidden;
       box-shadow: 0 12px 28px rgba(19, 38, 47, 0.06);
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .event-slide:hover { transform: translateY(-3px); }
     .event-slide img {
@@ -658,7 +680,7 @@
       width: 50px;
       height: 50px;
       border-radius: 100px;
-      background: var(--paper);
+      background: var(--card);
       color: var(--jet-black);
       border: 1px solid var(--khaki-beige);
       font-size: 16px;
