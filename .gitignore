@@ -5,3 +5,6 @@
 node_modules/
 .vscode/
 .idea/
+
+# wrangler 本機暫存
+.wrangler/
