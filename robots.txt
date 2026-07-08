@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://shih-yuting-website.j2hsi9123.workers.dev/sitemap.xml
+Sitemap: https://otshih.com/sitemap.xml
