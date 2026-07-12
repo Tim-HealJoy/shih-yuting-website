@@ -75,11 +75,6 @@
         "@type": "Organization",
         "name": "台北市職能治療師公會",
         "roleName": "理事"
-      },
-      {
-        "@type": "Organization",
-        "name": "台灣生活復能協會",
-        "roleName": "理事"
       }
     ],
     "worksFor": {
@@ -221,6 +216,8 @@
       transition: width 0.3s;
     }
     .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--olive-bark); font-weight: 500; }
+    .nav-links a.active::after { width: 100%; }
     .nav-cta {
       padding: 10px 22px;
       background: var(--jet-black);
@@ -436,6 +433,59 @@
     }
     @media (max-width: 880px) {
       .services-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============ Topics（可邀約主題）============ */
+    #topics { background: var(--paper); }
+    .stage-group { max-width: 940px; margin: 0 auto 42px; }
+    .stage-group:last-of-type { margin-bottom: 0; }
+    .stage-cat {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--jet-black);
+    }
+    .stage-cat h3 {
+      font-family: var(--serif-tc);
+      font-weight: 900;
+      font-size: 21px;
+      margin: 0;
+    }
+    .stage-cat .stage-cat-en {
+      font-family: var(--sans-en);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--khaki-beige);
+    }
+    .stage-featured {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .stage-featured span {
+      font-family: var(--serif-tc);
+      font-weight: 600;
+      font-size: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 10px 18px;
+    }
+    .stage-featured span em {
+      font-style: normal;
+      font-family: var(--sans-en);
+      font-size: 12px;
+      color: var(--olive-bark);
+      margin-left: 8px;
+    }
+    .stage-more {
+      font-size: 13.5px;
+      color: rgba(19, 38, 47, 0.55);
+      line-height: 1.8;
     }
 
     /* ============ Stats ============ */
@@ -810,12 +860,9 @@
         <span class="brand-sub">SHIH · YU-TING · OT</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">關於我</a></li>
-        <li><a href="#services">服務項目</a></li>
-        <li><a href="#stats">累積</a></li>
-        <li><a href="#media">合作媒體</a></li>
-        <li><a href="#articles">專欄文章</a></li>
-        <li><a href="#events">活動現場</a></li>
+        <li><a href="/" class="active">首頁</a></li>
+        <li><a href="/about/">關於我</a></li>
+        <li><a href="/articles/">專欄文章</a></li>
       </ul>
       <a href="#contact" class="nav-cta">邀約合作</a>
     </div>
@@ -826,7 +873,7 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-text">
-          <span class="hero-tag">Personal Brand · Occupational Therapist</span>
+          <span class="hero-tag">Occupational Therapist</span>
           <h1>用<em>職能治療師</em>的眼睛，<br>看懂生活</h1>
           <p class="subtitle">把復能，帶進每一個家、每一場培訓</p>
           <a href="#contact" class="btn-primary">邀約合作</a>
@@ -849,9 +896,10 @@
           <span class="eyebrow">About</span>
           <h2>嗨，我是施昱廷</h2>
           <p class="about-role">職能治療師 × 高齡友善住宅顧問 × 培訓講師</p>
-          <p>從臨床走到家裡、從家裡走到課堂 — 我是一位職能治療師，但我相信「職能」不只發生在醫院或機構，更在每一個人的生活裡。</p>
+          <p>從臨床走到家裡、從家裡走到課堂。我是一位職能治療師，我相信「職能」發生在每一個人的生活裡。</p>
           <p>職能治療師的價值，不是讓人變得更依賴專業，而是看見人的可能性，把復能的智慧帶進日常生活、培訓現場、與住宅設計裡。讓人可以透過調整環境或是工作模式來發揮最大潛能。</p>
           <p>至今累積 800 場以上企業、學界、醫療、社福、政府單位授課實戰，是台灣第一位取得美國 LSVT-BIG 國際巴金森氏症介入認證的職能治療師。亦為漢聲廣播電台高齡節目合作主持人、聯合報 Wacare 遠距健康駐站專家。現在則身兼健悅管理顧問技術總監、台北市職能治療師公會理事。</p>
+          <p style="margin-top: 28px;"><a href="/about/" style="display: inline-flex; align-items: center; gap: 8px; color: var(--olive-bark); font-weight: 500; border-bottom: 1px solid var(--olive-bark); padding-bottom: 2px;">完整認識昱廷 — 理念、資歷、走過的講台 →</a></p>
         </div>
       </div>
     </div>
@@ -894,6 +942,42 @@
     </div>
   </section>
 
+  <!-- =================== TOPICS =================== -->
+  <section id="topics">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Topics · Courses</span>
+        <h2>可邀約的演講主題</h2>
+        <p>每個主題都來自現場實戰，可依單位屬性與需求客製調整。</p>
+      </div>
+
+      <div class="stage-group">
+        <div class="stage-cat"><h3>企業與公部門講座</h3><span class="stage-cat-en">Corporate Talks</span></div>
+        <div class="stage-featured">
+          <span>職場正念溝通力<em>心理減壓</em></span>
+          <span>職場正念壓力情緒調適<em>心理減壓</em></span>
+          <span>久坐就腰痛，怎麼坐最正確<em>痠痛自救</em></span>
+          <span>頭怎麼傾，身體怎麼緊<em>痠痛自救</em></span>
+          <span>提升工作效率的睡眠超技法<em>腦科學與生產力</em></span>
+          <span>拒絕大腦初老症：日本職能治療在用的強效記憶法<em>腦科學與生產力</em></span>
+        </div>
+      </div>
+
+      <div class="stage-group">
+        <div class="stage-cat"><h3>長照人員繼續教育課程</h3><span class="stage-cat-en">Continuing Education</span></div>
+        <div class="stage-featured">
+          <span>長照 3.0 擴大 PAC：居家復能<em>政策 × 復能</em></span>
+          <span>巴金森氏症與中風患者復能<em>臨床 × 復能</em></span>
+          <span>肌肉骨骼痠痛大補帖<em>職業健康</em></span>
+          <span>舒適照顧轉移位技巧<em>照顧實作</em></span>
+          <span>正念減壓溝通技巧<em>溝通 × 身心</em></span>
+          <span>高齡者居家陪伴活動設計<em>活動設計 × AI</em></span>
+        </div>
+        <p class="stage-more">每門 3 小時，依長照人員繼續教育積分規定設計，可單門開設或組合為系列進修；社區據點、家庭照顧者版本亦可調整。</p>
+      </div>
+    </div>
+  </section>
+
   <!-- =================== STATS =================== -->
   <section id="stats">
     <div class="container">
@@ -928,7 +1012,7 @@
       <div class="section-header">
         <span class="eyebrow">Media · Collaborations</span>
         <h2>合作媒體</h2>
-        <p>從廣播主持、雜誌專欄、文化機構共創到品牌商業合作 — 把專業翻譯成可被聽見的對話。</p>
+        <p>從廣播主持、雜誌專欄、文化機構共創，到品牌商業合作。</p>
       </div>
       <div class="media-grid">
         <a href="https://audio.voh.com.tw/tw/Playback/ugC_Playback.aspx?PID=162&D=20250406" target="_blank" rel="noopener" class="media-card">
@@ -968,7 +1052,7 @@
       <div class="section-header">
         <span class="eyebrow">Articles · Writings</span>
         <h2>專欄文章</h2>
-        <p>把臨床洞察寫成可被帶回家的方法 — 從平衡防跌、復能訓練到正念照顧。</p>
+        <p>把臨床洞察寫成可以帶回家的方法。</p>
       </div>
       <div class="articles-grid">
         <a href="https://ankemedia.com/2026/44414" target="_blank" rel="noopener" class="article-card">
@@ -985,7 +1069,7 @@
           </div>
         </a>
       </div>
-      <p class="articles-footer">更多文章持續更新中 — 想看完整文章列表，<em><a href="https://ankemedia.com/author/yutingshi" target="_blank" rel="noopener" style="text-decoration: underline;">前往安可人生作者頁</a></em></p>
+      <p class="articles-footer">更多文章持續更新中 — <em><a href="/articles/" style="text-decoration: underline;">看全部專欄文章</a></em></p>
     </div>
   </section>
 
@@ -999,6 +1083,18 @@
       </div>
       <div class="carousel">
         <div class="carousel-track" id="carouselTrack">
+          <div class="event-slide">
+            <img src="assets/events/11-daai.jpg" alt="大愛電視採訪 — 居家復能服務">
+            <div class="event-caption">大愛電視採訪｜把復能帶進家裡</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/12-baodaren-pr.jpg" alt="包大人 30 週年品牌記者會">
+            <div class="event-caption">包大人 30 週年品牌記者會</div>
+          </div>
+          <div class="event-slide">
+            <img src="assets/events/13-corporate-lounge.jpg" alt="企業講座 — 職場健康促進">
+            <div class="event-caption">企業講座｜職場健康促進</div>
+          </div>
           <div class="event-slide">
             <img src="assets/events/01-baodaren.jpg" alt="與包大人 30 週年合作">
             <div class="event-caption">與包大人 30 週年合作｜提拉密舒健康操示範</div>
@@ -1089,6 +1185,22 @@
       if (window.scrollY > 12) nav.classList.add('scrolled');
       else nav.classList.remove('scrolled');
     });
+
+    // Scrollspy — highlight the nav item of the section currently in view
+    const spyLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+    const spySections = spyLinks
+      .map(a => document.querySelector(a.getAttribute('href')))
+      .filter(Boolean);
+    function updateSpy() {
+      const probe = window.scrollY + nav.offsetHeight + 90;
+      let current = null;
+      for (const sec of spySections) {
+        if (sec.offsetTop <= probe) current = sec;
+      }
+      spyLinks.forEach(a => a.classList.toggle('active', current && a.getAttribute('href') === '#' + current.id));
+    }
+    window.addEventListener('scroll', updateSpy, { passive: true });
+    updateSpy();
 
     // Carousel controls
     const track = document.getElementById('carouselTrack');
