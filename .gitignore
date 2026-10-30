@@ -8,3 +8,6 @@ node_modules/
 
 # wrangler 本機暫存
 .wrangler/
+
+# Claude 本機預覽設定
+.claude/

@@ -6,3 +6,6 @@ wrangler.jsonc
 worker.js
 .assetsignore
 .wrangler
+courses
+articles/_pending_cards.html
+sitemap_pending.xml

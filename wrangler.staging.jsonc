@@ -1,0 +1,11 @@
+{
+  // 測試版部署設定 — 給老闆預覽用，網址 shih-yuting-website-staging.*.workers.dev
+  "name": "shih-yuting-website-staging",
+  "compatibility_date": "2026-05-25",
+  "main": "staging-worker.js",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}
